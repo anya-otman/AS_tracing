@@ -71,7 +71,7 @@ def get_table_string(number: int, ip_data) -> str:
         provider = ip_data[3]
     return f'| {n}' + ' ' * (3 - len(n)) + '| ' + ip + ' ' * (15 - len(ip)) + '| ' + a_system + ' ' * \
            (15 - len(a_system)) + '| ' + country + ' ' * (15 - len(country)) + '| ' + provider + ' ' * \
-           (16 - len(provider)) + '|' + '\n'
+           (22 - len(provider)) + '|' + '\n'
 
 
 def main():
