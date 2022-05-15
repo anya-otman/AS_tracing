@@ -23,7 +23,7 @@ def convert_domain_to_ip(domain: str) -> str:
         ip = socket.gethostbyname(domain)
         return ip
     except socket.gaierror:
-        print('Неккоректное доменное имя')
+        print('Неккоректное доменное имя, или отсутствует подключение к сети')
         sys.exit()
 
 
